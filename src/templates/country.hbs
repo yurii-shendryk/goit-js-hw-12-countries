@@ -4,27 +4,19 @@
     <h2 class="country__name">{{name}}</h2>
     <div class="country__information">
         <ul class="country__description">
-            <li class="country__description-item"><span>Capital:</span> {{capital}}</li>
-            <li class="country__description-item"><span>Population:</span> {{population}}</li>
+            <li class="country__description-item"><b>Capital:</b> {{capital}}</li>
+            <li class="country__description-item"><b>Population:</b> {{population}}</li>
             <li class="country__description-item">
-                <span>Languages</span>
+                <b>Languages: </b>
                 <ul class="country__languages">
                     {{#each languages}}
-                    <li>{{this.name}}</li>
+                    <li class="country__languages-item">{{this.name}}</li>
                     {{/each}}
                 </ul>
         </ul>
-        <div class="image-container"><img src="{{flag}}" alt="{{demonym}}" class="country__flag"></div>
+        <div class="image-container">
+            <img src="{{flag}}" alt="{{demonym}}" class="country__flag">
+        </div>
     </div>
-</li>
-
-
-</div>
-
-
-
-
-
-
 </li>
 {{/each}}
